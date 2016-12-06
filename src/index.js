@@ -1,4 +1,4 @@
-require('traceur/bin/traceur-runtime.js');
+require('babel-polyfill');
 export const brands = require('./brands');
 export const util = require('./util');
 export { Algebraic } from './algebraic';

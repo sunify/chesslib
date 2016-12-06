@@ -54,7 +54,9 @@ export class EnPassantTarget extends Point {
 
 export class NullEnPassantTarget extends EnPassantTarget {
 
-	constructor() {}
+	constructor() {
+		super();
+	}
 
 	equal(other) {
 		if (other instanceof NullEnPassantTarget) {

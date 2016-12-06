@@ -1,6 +1,7 @@
 var path = require('path');
 var gulp = require('gulp');
 var traceur = require('gulp-traceur');
+var babel = require('gulp-babel');
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
@@ -44,10 +45,7 @@ function esify(src) {
 	}
 
 	return stream.
-		pipe(traceur({
-			experimental: true,
-			sourceMap: true
-		})).
+		pipe(babel()).
 		pipe(rename({
 			extname: '.js'
 		})).

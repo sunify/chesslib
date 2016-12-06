@@ -1,6 +1,7 @@
 export class ChessError extends Error {
 
 	constructor(message, position) {
+		super(message);
 		Error.call(this);
 		this.name = this.constructor.name;
 		this.message = message != null ? message : this.name;

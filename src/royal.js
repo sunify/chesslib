@@ -19,6 +19,7 @@ class RoyalMobility extends Mobility {
 class CastlingMobility extends Mobility {
 
 	constructor(color, side) {
+		super(color, side);
 		this.color = color;
 		this.side = side;
 	}
